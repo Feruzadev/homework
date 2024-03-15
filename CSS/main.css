@@ -1,3 +1,5 @@
+@import url(../Fonts/fonts.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -12,97 +14,134 @@ ul {
     list-style: none;
 }
 
- .site-header-hero {    
+.site-header-hero {
     display: flex;
     width: 100%;
-    height: 900px;
-    padding-top: 152px 0px;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-
+    background-color: #0D192C;
 }
+  
+
 .d-flex {
-    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
     width: 350px;
     height: 596px;
-    background-color: #16263f;
-    transition: .5s;
-    padding-top: 24px;
-    padding-bottom: 270px;
-    padding-left: 24px;
-    padding-right: 24px;
+    background-color: #15263f;
+    border-radius: 15px;}
 
-   
-}
-.d-flex:hover{
-    border-radius: 15px;
-    border: 5px solid rgb(57, 57, 234);
-}
-.site-header_image-logo {
-    justify-content: center;
-    align-items: center;
+.site-header_image {
     width: 302px;
     height: 302px;
-    
-}
-.site-header_image-logo:hover{
-    border-radius: 15px;
-    border: 5px solid rgb(57, 57, 234);
-}
-   
-.logo-name {
-    width: 302px;
-    color: var(--White, #FFF);
-    font-family: Outfit;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    
-}
+    margin-top: 24px;
+    }
 
-.logo-link {
+.site-header__title {
+    width: 302px;
+    color:#FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Outfit";
+    font-size: 22px;
+    font-weight: 600;
+    }
+.site-header__text {
+    padding-top: 16px;
     width: 302px;
     color: var(--Soft-Blue, #8BACD9);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Outfit;
+    font-family: "Outfit";
     font-size: 18px;
-    font-style: normal;
     font-weight: 300;
-    line-height: 26px; 
-    padding-bottom: 30px;
+    line-height: 26px; /* 144.444% */
+}
+.site-hedear__item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+  
+
+   
+}
+.site-hedear__img1 {
+    display: inline;
+    justify-content: flex-end;
+    width: 11px;
+    height: 18px;
+    fill: #00FFF8;
+    
+   
+}
+.site-hedear__item--text1 {
+    justify-content: flex-end;
+    display: inline;
+    color: var(--Cyan, #00FFF8);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 600;   
+    padding-right: 115px; 
+}
+.site-hedear__img2 {  
+    display: inline;
+    justify-content: flex-end;
+    width: 16px;
+    height: 16px;
+    fill: #8BACD9; 
+}
+.site-hedear__item--text2 {
+    display: inline;
+    justify-content: flex-end;
+    color: #8BACD9;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;   
+    }
+
+.site-hedear__line {
+    width: 302px;
+    height: 1px;
+    background: #2E405A;
+    margin-top: 24px;
+    margin-bottom: -10px;
 }
 
-.logo-line {
-    width: 302px;
-    height: 3px;
-    flex-shrink: 0;
-    background-color: #2E405A;
-    transition: .2S;
-    
-}
-.logo-line:hover {
-    height: 5PX;
-    background-color: #5874a1;
-}
+
 .logo-nav3 {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom:32 ;
-    padding-left: 24;
-    padding-right:50 ;
-}
-
-.logo-img {
+    justify-content: space-around;
+    justify-content:flex-end;
+    }
+    
+.logo-img {  
     width: 33px;
     height: 33px;
-    flex-shrink: 0;
     border-radius: 33px;
     border: 1px solid var(--White, #FFF);
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-   
-
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin-right: 30px;
+    margin-left: 6px;
 }
+.logo-name {
+    color: var(--Soft-Blue, #8BACD9);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400; 
+    color: #8BACD9 ;
+    }
+
+.logo-name1 {
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    color: White;
+    padding-right: 60px;
+    }
+
